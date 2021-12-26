@@ -121,6 +121,13 @@
 	   <li><a href="https://www.linkedin.com/in/siddak-bagga-60921b218/"><i class="fab fa-linkedin"></i></a></div></li></ul>
 	   
 	  </footer>
+	  <div class='cursor' id="cursor"></div>
+          <script>        var cursor = document.querySelector(".cursor");
+			document.addEventListener('mousemove', e=>{
+				cursor.setAttribute("style", "top:" + (e.pageY -10) +"px; left:" + (e.pageX-10)+"px");
+				
+			})  
+            </script>
 </div>
 </div>	
 </body>

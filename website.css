@@ -57,9 +57,11 @@ p{
     margin: 25px auto 0;
     text-align: center;
 	margin-left: 50px;
-	background-color: #e4bc0a;
+	background-color: #0ae4d9;
 }
-
+a:hover {
+	background-color: rgb(252, 250, 250);
+  }
 .main_container{
 	position: relative;
 }
@@ -367,3 +369,42 @@ margin-left: -900px;
 z-index: -1;
 margin-top: -400px;
 }
+.cursor {
+    width:20px;
+    height:20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: animate1 .5s infinite alternate;
+    pointer-events: none;
+}
+.cursor::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    opacity: .5;
+    top:-8px;
+    left:-8px;
+    animation: animate2 .5s infinite alternate;
+}
+@keyframes animate1{
+from{
+transform:scale(1);
+}
+to{
+transform: scale(0.7);
+}
+}
+@keyframes animate2{
+    from{
+    transform:scale(1);
+    }
+    to{
+    transform: scale(0.4);
+    }
+    }
