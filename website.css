@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -9,21 +9,22 @@
 	
 }
 h1.title{
-	margin-bottom: 20px;
-	color: #fdfdfd;
+	margin-bottom: 50px;
+	color: #fff8f8;
 	font-family: 'Times New Roman';
 	font-size: 38px;
 	word-spacing: 5px;
 	letter-spacing: 1px;
 	text-align: left;
+	padding-bottom: 10px;
 }
 h2.title{
-	margin-left: 600px;
+	margin-left: 800px;
 	margin-bottom: 20px;
 	margin-top: 200px;
-	color: #fdfdfd;
+	color: #000000;
 	font-family: 'Roboto', serif;
-	font-size: 38px;
+	font-size: 50px;
 	word-spacing: 5px;
 	letter-spacing: 1px;
 	text-align: left;
@@ -31,7 +32,7 @@ h2.title{
 h4.title{
 	margin-left: -930px;
 	margin-bottom: 20px;
-	color: #fdfdfd;
+	color: #000000;
 	font-family: 'Merriweather', serif;
 	font-size: 38px;
 	word-spacing: 5px;
@@ -39,7 +40,7 @@ h4.title{
 }
 p{
 	margin-bottom: 15px;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 20px;
 	color: #fffdfd;
 	text-align: left;
@@ -49,12 +50,14 @@ p{
     width: 180px;
     height: 35px;
     line-height: 35px;
-    border: 2px solid #fffeff;
-    color: #fffbfd;
+    border: 2px solid #000000;
+    color: #000000;
     display: block;
+	border-radius: 50px;
     margin: 25px auto 0;
     text-align: center;
 	margin-left: 50px;
+	background-color: #e4bc0a;
 }
 
 .main_container{
@@ -69,6 +72,7 @@ p{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	font-weight: 200;
 }
 
 .logo a{
@@ -76,6 +80,7 @@ p{
 	font-size: 32px;
 	color: #080808;
 	text-transform: uppercase;
+	
 
 }
 
@@ -90,19 +95,21 @@ p{
 .navbar_items ul li a{
 	text-transform: uppercase;
 	color: #000000;
+	font-weight: 200;
+	font-family: 'Allura', cursive;
 }
 
 /* banner_image */
 .banner_image{
-	background: url('images/mountain.jpg') no-repeat top center;
+	background: url('images/art.jpg');
 	background-size: cover;
 	width: 100%;
 	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
 
+}
 .banner_content{
 	text-align: center;
 	color: #000000;
@@ -111,12 +118,25 @@ p{
 .banner_content h1{
 	text-transform: uppercase;
 	line-height: 38px;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
+	margin-top: 300px;
+
 }
 
 .banner_content h1 span{
-	color: #464545;
+	color: #7af10b;
 }
+#background-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+  }
 .img{
     border-radius: 50%;
     width: 400px;
@@ -138,20 +158,22 @@ p{
 .ourteam{
 	text-align: center;
 	padding: 5% 10%;
-    background-color: black;
 }
-
+.about{
+	background-color: black;
+}
 /* Services */
 .services{
-	background: #020202;
-	background-image: url(images/world.jpg);
+	background: #e4bc0a;
+	background-image: url(images/art1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .contactus{
-	background-image: url(images/Image.jpg);
+	background-image: url(images/art7.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .diff_services {
@@ -177,14 +199,14 @@ p{
 
 /* Contact us */
 .form_wrapper .form_input{
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 	margin-left: -930px;
 }
 
 .form_wrapper .form_input input[type="text"]{
 	width: 250px;
 	padding: 12px 20px; 
-	border: 1px solid #ccc;
+	border: 1px solid rgb(0, 0, 0);
 }
 
 .form_wrapper .form_input textarea{
@@ -192,12 +214,11 @@ p{
 	padding: 12px 20px; 
 	height: 80px;
 	resize: none;
-	border: 1px solid  #ccc;
+	border: 1px solid  rgb(0, 0, 0);
 }
 /* our team */
 .ourteam{
-	background: #080808;
-	background-image: url(images/team.jpg);
+	background-image: url(images/ss3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -217,11 +238,14 @@ p{
 }
 
 .ourteam_wrapper .team_members{
-	width: 30%;
+	width: 100px;
 	height: auto;
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
+	border-radius: 50%;
+	size: inherit;
+
 }
 
 .ourteam_wrapper .team_members img{
@@ -265,14 +289,16 @@ p{
 
 }
 .map{
-	margin-top: -900px;
-	margin-left: 800px;
+	margin-top: -500px;
+	margin-left: 500px;
 	width: 300px;
 	cursor: pointer;
+	width: 50%;
+	height: 50%;
 }
 .background {
 	width: 100%;
-	background-image: url(images/footer.jpg);
+	background-image: url(images/art3.jpg);
 	background-size:100% 100%;
 	position: fixed;
 	top:680px;
@@ -323,15 +349,21 @@ p{
   }
   .tour{
 	  width: 50%;
-	  height: 50%;
-	  display: inline;
-	  padding: 10px;
+	  height: 60%;
+	  display: inline-flex;
+	  padding: 15px;
 	  box-sizing: border-box;
 	  margin-left: -100px;
 	  cursor: pointer;
+	  margin-top: 50px;
   }
 .text{
 	text-align: left;
 	margin-top: -200px;
 	font-size: 19px;
+}
+.image{
+margin-left: -900px;
+z-index: -1;
+margin-top: -400px;
 }
