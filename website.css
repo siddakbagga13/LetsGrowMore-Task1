@@ -60,7 +60,8 @@ p{
 	background-color: #0ae4d9;
 }
 a:hover {
-	background-color: rgb(252, 250, 250);
+	background-color: rgb(117, 212, 97);
+	border-radius: 10px;
   }
 .main_container{
 	position: relative;
